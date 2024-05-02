@@ -7,6 +7,9 @@ import getListings, {
 } from "@/app/actions/getListings";
 import getCurrentUser from "@/app/actions/getCurrentUser";
 import ClientOnly from "./components/ClientOnly";
+import TravelForm from "./components/modals/TravelForm";
+import Catalog from "./components/modals/Catalog";
+import RealVirt from "./components/modals/RealVirt";
 
 interface HomeProps {
   searchParams: IListingsParams
@@ -27,6 +30,22 @@ const Home = async ({ searchParams }: HomeProps) => {
   return (
     <ClientOnly>
       <Container>
+      
+      <div className="pb-20 pt-28">
+            <TravelForm />
+          </div>
+          <div className="pb-20 pt-28">
+          <Catalog/>
+
+          </div>
+          <div className="pb-20 pt-28">
+        Realidad Virtual 
+        <p>Descubre el mundo desde la comodidad de tu hogar con nuestra exclusiva suscripción premium. Cada experiencia ha sido meticulosamente seleccionada para despertar tus sentidos y transportarte a destinos exóticos y emocionantes. Sumérgete en narrativas inmersivas y envolventes, creadas por expertos en cada campo, que te harán sentir como si estuvieras realmente allí.</p>
+
+            <RealVirt />
+
+            Hospedajes Y Servicios   
+          </div>
         <div 
           className="
             pt-24
@@ -40,6 +59,9 @@ const Home = async ({ searchParams }: HomeProps) => {
             gap-8
           "
         >
+          
+          
+          
           {listings.map((listing: any) => (
             <ListingCard
               currentUser={currentUser}
@@ -48,9 +70,11 @@ const Home = async ({ searchParams }: HomeProps) => {
             />
           ))}
         </div>
+        
       </Container>
     </ClientOnly>
   )
 }
 
 export default Home;
+

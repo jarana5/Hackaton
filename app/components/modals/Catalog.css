@@ -1,0 +1,16 @@
+.catalogo-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.catalogo-item img {
+    max-width: 100px;
+}
+
+.catalogo-item p {
+    margin: 0;
+}

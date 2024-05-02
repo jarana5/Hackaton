@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <style>
+    /* Estilos CSS */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .navbar-logo img {
+      height: 40px;
+    }
+
+    .navbar-menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    .navbar-menu li {
+      margin-right: 20px;
+    }
+
+    .navbar-menu li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .user-avatar img {
+      height: 40px;
+      border-radius: 50%;
+      margin-left: 20px;
+    }
+
+    .btn {
+      background-color: #fff;
+      color: #333;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* Estilos para la imagen gigante */
+    .big-image {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Estilos para el botón de reservar */
+    .reservar-btn {
+      background-color: #007bff; /* Azul */
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      margin: 20px 0;
+      cursor: pointer;
+      display: block;
+      width: 200px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="./Logo.png" alt="Logo">
+    </div>
+    <div class="navbar-menu">
+      <ul>
+        <li><a href="hospedaje">Hospedaje</a></li>
+        <li><a href="servicios">Servicios</a></li>
+        <li><a href="realidad_aumentada">Realidad Aumentada</a></li>
+        <li><a href="acerca_de">Acerca de</a></li>
+        <li><a href="beneficios">Beneficios</a></li>
+      </ul>
+    </div>
+    <div class="user-actions">
+      <button class="btn">Inscribirse / Ingresar</button>
+      <div class="user-avatar" style="display: none;">
+        <img src="avatar_usuario.png" alt="Avatar">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Imagen gigante -->
+  <img class="big-image" src="./Real.png" alt="Imagen Gigante">
+
+  <!-- Botón de reservar -->
+  <button class="reservar-btn">Reservar Todo</button>
+</body>
+</html>

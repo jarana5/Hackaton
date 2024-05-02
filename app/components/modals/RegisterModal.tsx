@@ -64,8 +64,8 @@ const RegisterModal= () => {
   const bodyContent = (
     <div className="flex flex-col gap-4">
       <Heading
-        title="Welcome to Airbnb"
-        subtitle="Create an account!"
+        title="Bienvenido a Smart Journey"
+        subtitle="Crear una cuenta"
       />
       <Input
         id="email"
@@ -77,7 +77,7 @@ const RegisterModal= () => {
       />
       <Input
         id="name"
-        label="Name"
+        label="Nombre"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -85,7 +85,7 @@ const RegisterModal= () => {
       />
       <Input
         id="password"
-        label="Password"
+        label="Contraseña"
         type="password"
         disabled={isLoading}
         register={register}
@@ -100,13 +100,13 @@ const RegisterModal= () => {
       <hr />
       <Button 
         outline 
-        label="Continue with Google"
+        label="Continuar con google"
         icon={FcGoogle}
         onClick={() => signIn('google')} 
       />
       <Button 
         outline 
-        label="Continue with Github"
+        label="Continuar con Github"
         icon={AiFillGithub}
         onClick={() => signIn('github')}
       />
@@ -118,7 +118,7 @@ const RegisterModal= () => {
           font-light
         "
       >
-        <p>Already have an account?
+        <p>¿Ya tienes una cuenta?
           <span 
             onClick={onToggle} 
             className="
@@ -137,7 +137,7 @@ const RegisterModal= () => {
       disabled={isLoading}
       isOpen={registerModal.isOpen}
       title="Register"
-      actionLabel="Continue"
+      actionLabel="Continuar"
       onClose={registerModal.onClose}
       onSubmit={handleSubmit(onSubmit)}
       body={bodyContent}

@@ -1,0 +1,34 @@
+.destino {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .destino img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .destino div {
+    flex-grow: 1; /* Permite que el contenido ocupe todo el espacio disponible */
+  }
+  
+  .destino h2 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .destino p {
+    margin: 0;
+    margin-bottom: 10px; /* Añade un espacio entre la descripción y el enlace */
+  }
+  
+  .destino a {
+    color: blue;
+    text-decoration: underline;
+  }
+  

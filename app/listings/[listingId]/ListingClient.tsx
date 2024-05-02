@@ -15,6 +15,9 @@ import { categories } from "@/app/components/navbar/Categories";
 import ListingHead from "@/app/components/listings/ListingHead";
 import ListingInfo from "@/app/components/listings/ListingInfo";
 import ListingReservation from "@/app/components/listings/ListingReservation";
+import Catalog from "@/app/components/modals/Catalog";
+import Hotel from "@/app/components/modals/Hotel";
+import Paquete from "@/app/components/modals/Paquete";
 
 const initialDateRange = {
   startDate: new Date(),
@@ -75,7 +78,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
         listingId: listing?.id
       })
       .then(() => {
-        toast.success('Listing reserved!');
+        toast.success('Reservado!');
         setDateRange(initialDateRange);
         router.push('/trips');
       })
@@ -165,6 +168,15 @@ const ListingClient: React.FC<ListingClientProps> = ({
           </div>
         </div>
       </div>
+      <div className="pb-20 pt-28">
+        Servicios:
+          <Catalog/>
+        Hoteles Similares:
+          <Hotel/> 
+        Paquetes Similares:
+          <Paquete/>   
+
+          </div>
     </Container>
    );
 }

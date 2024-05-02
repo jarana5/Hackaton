@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutoriales</title>
+  <style>
+    /* Estilos CSS */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .navbar-logo img {
+      height: 40px;
+    }
+
+    .navbar-menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    .navbar-menu li {
+      margin-right: 20px;
+    }
+
+    .navbar-menu li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .user-avatar img {
+      height: 40px;
+      border-radius: 50%;
+      margin-left: 20px;
+    }
+
+    .btn {
+      background-color: #fff;
+      color: #333;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* Estilos para los tutoriales */
+    .tutorial {
+      margin: 20px 0;
+    }
+
+    .tutorial h2 {
+      margin: 0;
+    }
+
+    .tutorial p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="./Logo.png" alt="Logo">
+    </div>
+    <div class="navbar-menu">
+      <ul>
+        <li><a href="#hospedaje">Hospedaje</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#realidad_aumentada">Realidad Aumentada</a></li>
+        <li><a href="#acerca_de">Acerca de</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#tutoriales">Tutoriales</a></li>
+        <li><a href="#smartjourney">SmartJourney</a></li>
+      </ul>
+    </div>
+    <div class="user-actions">
+      <button class="btn">Inscríbete</button>
+      <div class="user-avatar" style="display: none;">
+        <img src="avatar_usuario.png" alt="Avatar">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección de tutoriales -->
+  <section id="tutoriales">
+    <h1>TUTORIALES</h1>
+
+    <!-- Tutorial de Solana -->
+    <div class="tutorial">
+      <h2>Explorando Solana y su Potencial en el Turismo</h2>
+      <p>¿Qué es Solana?</p>
+      <p>Solana es una plataforma blockchain de alto rendimiento diseñada para facilitar el desarrollo de aplicaciones descentralizadas (dApps) y contratos inteligentes. Su objetivo principal es proporcionar una infraestructura rápida, segura y escalable para aplicaciones de blockchain. Utiliza un mecanismo de consenso de prueba de historia (PoH) junto con otras tecnologías innovadoras para lograr transacciones rápidas y costos bajos.</p>
+    </div>
+
+    <!-- Tutorial de Realidad Aumentada -->
+    <div class="tutorial">
+      <h2>Realidad Virtual y Aumentada en la Experiencia Turística</h2>
+      <p>¿Qué es la Realidad Aumentada (RA)?</p>
+      <p>La Realidad Aumentada (RA) es una tecnología que superpone elementos digitales, como imágenes, videos o información, sobre el mundo real. A través de dispositivos como teléfonos inteligentes, tabletas o gafas de RA, los usuarios pueden ver tanto el mundo físico como los elementos virtuales integrados en tiempo real.</p>
+    </div>
+
+    <!-- Tutorial de Realidad Virtual -->
+    <div class="tutorial">
+      <h2>Explorando la Realidad Virtual en el Turismo</h2>
+      <p>¿Qué es la Realidad Virtual (RV)?</p>
+      <p>La Realidad Virtual (RV) es una tecnología que sumerge al usuario en un entorno completamente virtual generado por computadora. A través de dispositivos como auriculares de RV y controladores, los usuarios pueden interactuar con este entorno como si estuvieran físicamente presentes en él.</p>
+    </div>
+  </section>
+</body>
+</html>

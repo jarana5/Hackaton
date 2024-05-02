@@ -1,11 +1,10 @@
-import countries from 'world-countries';
+import citiesData from 'world-countries';
 
-const formattedCountries = countries.map((country) => ({
-  value: country.cca2,
-  label: country.name.common,
-  flag: country.flag,
-  latlng: country.latlng,
-  region: country.region,
+const formattedCountries = citiesData.map((city) => ({
+  value: city.cca2,
+  label: city.name.common,
+  latlng: city.latlng,
+  region: city.region,
 }));
 
 const useCountries = () => {
